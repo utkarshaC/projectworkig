@@ -1,0 +1,99 @@
+?php
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DietDelish- Login</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url(bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin-top: 6%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #fdf9f9;
+      border-radius: 20px;
+      position:sticky;
+      box-shadow: 6px 6px 10px rgba(0, 0, 0,);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: #101110;
+      font-size: 12px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: green;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .back_to_home{
+      color: #1b112c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4><img src="logo.png" ></h4>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required="required" placeholder="Enter your username">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"  required="required" placeholder="Enter your password">
+
+      <div class="options">
+        <a href="#">Forgot password?</a>
+        <a href="/new_acc/newacc.html">Create an account</a>
+      </div>
+
+      <button class="btn" type="submit">Login</button>
+    </form>
+    <div style="text-align: center;">
+      <a href="/hmpg.html" class="back_to_home"><p >Continue without an account</p></div></a>
+  </div>
+</body>
+</html>

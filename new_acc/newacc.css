@@ -1,0 +1,203 @@
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.container .header a{
+    color: #920808;
+    padding: 100px;
+    padding-top: 100px;
+    margin-top: 100px;
+    font-size: 40px;
+    display: inline-block;
+    margin:-400px;
+    
+    
+}
+.container .header i{
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+body{
+    font-size: 14px;
+    background-image:url("bg1.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* .header{
+    display: flex;
+} */
+.content{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* padding: 50px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* background-color: white;
+width: 500px;
+padding: 25px;
+margin: 50px  auto 0;
+border-top:5px solid blue;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} */
+
+.container .header h2{
+    font-size: 30px;
+    float: left;
+    font-weight: 500;
+    background-color:rgba(245, 245, 220, 0.801);
+    padding: 5px;
+    height: auto;
+    color: #1a0404;
+    width: 100%;
+    justify-content: ;
+    text-align:center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    /* text-shadow: 1px 1px 10px black; */
+    border-radius: 10px;
+}
+.container .header span{
+    font-size: 38px;
+    color: #920808;
+}
+.container .header p{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+.container .form{
+    width: 500px;
+    padding: 20px;
+    margin: 50px  auto 0;
+    border-top:5px solid  #920808;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 10px black;
+    /* background-color: white; */
+    background-color: #cccccc96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.input-name{
+    width: 80%;
+    /* padding: 5px 0 ;
+    margin: 9px 0; */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-name i{
+    padding: 10px 10px 10px 10px;
+    left: 0;
+    color:  #920808;
+    font-size: 20px;
+}
+
+.input-name input{
+    width: 100%;
+    padding: 8px 0;   /* top, right, bottom, and left*/
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    background-color: beige;
+    border-bottom: 2px solid #1a0404;
+    outline: none;
+    resize: none;
+    margin-left: 10px;
+}
+
+/* placehholder to center */
+
+.input-name input::placeholder{
+    text-align: center;
+}
+
+/* .input-name input:hover{
+    margin: 11px;
+    border-radius:30px ;
+    transition: 0.5s;
+} */
+
+.input-name .check-button{
+    width: 100%;
+    transform: scale(1.5); /* Standard syntax */
+    size: 20px 20px;
+    padding:  10px;
+    /* margin: 10px ; */
+    border:1px solid #cccccc96;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkboxpre{
+    width: 100%;
+    /* padding:  10px; */
+    margin: 10px ;
+    /* border: 1px dashed #545454; */
+    border-radius: 5px;
+    outline: none;
+    /* background-color: white; */
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.input-name .button{
+    width: 100%;
+    /* padding:  10px; */
+    margin: 10px ;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    background-color: #920808;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+}
+.input-name pre{
+    margin-right: 20px;
+
+}
+.input-name .button:hover{
+    background-color: #1a0404;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}

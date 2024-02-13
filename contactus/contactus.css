@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.home a{
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    margin-left: -200px;
+    font-size: 30px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(contactusbg12.jpg);
+    background-size: cover;
+}
+
+.contact .content{
+    float: right;
+    margin-left: 30px;
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a0404;
+}
+.contact .content p{
+    margin-top: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a0404;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.container .contactDetails{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactDetails .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container p{
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #1a0404;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container .contactDetails .box .icon{
+    min-width: 60px;
+    height: 60px;
+    font-weight: 500;
+    color:#1a0404;
+    background: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactDetails .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:beige;
+    flex-direction: column;
+    font-weight: 500;
+    background-color: rgba(245, 245, 220, 0.918);
+    border-radius: 10px;
+
+}
+.container .contactDetails .box .text h3{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: rgb(241, 56, 56);
+}
+.contactform{
+    width:40%;
+    padding:40px;
+    background-color:beige;
+}
+.contactform h2{
+    text-align: center;
+    font-size: 35px;
+    color: #1a0404;
+    font-weight: 800;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100;
+    margin-top: 10px;
+}
+/* styling input tag of inputbox class */
+/* you can style two elements by adding a comma in between */
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 8px 0;   /* top, right, bottom, and left*/
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    background-color: beige;
+    border-bottom: 2px solid #1a0404;
+    outline: none;
+    resize: none;
+}
+.contactform .inputBox span{
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    left: 0;    /*affects the horizontal position of a positioned element*/
+    padding: 8px 0; 
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #6e6666;
+}
+/* ~ is like ek particular sequence ko format krna ig like p ke bad span hai to ho format hoga  */
+/* so is case me every span after the input tag will be selected */
+.contactform .inputBox input:focus~ span,
+.contactform .inputBox input:valid~ span,
+.contactform .inputBox textarea:focus~ span,
+.contactform .inputBox textarea:valid~ span{
+    color: rgb(241, 56, 56);
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+/* [type=""] is used to select elements based on the value of their attributes */
+.contactform .inputBox input[type="submit"]{
+    width: 100px;
+    background-color: #8c94ed;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.contactform .inputBox input[type="submit"]:hover{
+    background-color: #56597b;
+}
+
+

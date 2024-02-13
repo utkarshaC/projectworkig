@@ -1,0 +1,155 @@
+*{
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 140vh;
+  background-image: url("bg3.jpg");
+  background-color: rgba(245, 245, 220, 0.912);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/*heading of post box*/
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-right: 20px;
+  font-weight: 700;
+  float: right;
+  margin-bottom: 40px;
+}
+
+
+/*full post box*/
+.container {
+  width: 700px;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Times New Roman';
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  box-shadow: 10px  10px 10px rgba(0, 0, 0, 0.769);
+  /* border: 2px solid rgba(0, 0, 0, 0.769); */
+}
+
+
+/*below input text box*/
+.form-group {
+  margin-bottom: 10px;
+}
+
+/*post button*/
+.form-group label {
+  margin-bottom: 1px;
+  font-weight: bold;
+  outline: none;
+}
+.form-group input,
+.form-group textarea
+{
+  border:none;
+}
+/*about recipe box style*/
+.form-group input,
+.form-group textarea {
+  width: 97%;
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: #ce0303 2.8px solid;
+  border-left: #ce0303 2.8px solid;
+  border-radius: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  resize: none;
+  font-weight: 600;
+  /*box-shadow: 1px 2px 0.5px gray;*/
+}
+.form-group input:focus,
+.form-group textarea:focus{
+  border: none;
+}
+
+/*idk*/
+.form-group .ingredients {
+  display: flex;
+  align-items: center;
+}
+
+/*idk*/
+.form-group .ingredients input {
+  flex: 1;
+}
+
+/*space betn input box and add button*/
+#ingredients-container {
+  margin-bottom: 5px;
+}
+
+.step-item,
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ingredient-item input {
+  flex: 1;
+  /* margin-right: 10px; */
+}
+
+.delete-step,
+.ingredient-item .delete-ingredient {
+  color: #ce0303;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+#post-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+}
+
+#post-button:hover {
+  background-color: #0b280c;
+}
+#add-ingredient,
+#add-step
+{
+  border:none;
+  padding:5px;
+  color: rgb(74, 62, 62);
+  font-size: 15px;
+  font-weight: 550;
+  border:dashed 1px #0b280c
+}
+#add-ingredient:hover
+#add-step:hover
+{
+  transform: scale(1.03);
+  transition: all .2s ease;
+}

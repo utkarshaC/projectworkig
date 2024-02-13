@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Exo 2', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    z-index: 1000;      /*specifies the stack order of an element */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 10% ;
+    background-color:beige;
+}
+
+.navigation_menu{
+    display: flex;
+   align-items: center;
+}
+
+/*styling navigation menu's anchor tags */
+.navigation_menu a{
+    color: #1a0404;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    transition: all .42s ease;      /* controls animation speed  */
+}
+/* when we hover pointer over menu */
+.navigation_menu a:hover{
+    color:#cc0000 ;
+}
+/* styling the cuisine button */
+.navigation_menu button{
+    color: #1a0404;
+    font-size: 16px;
+    background-color: beige;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    border: none;
+    transition: all .42s ease;
+    
+
+}
+.navigation_menu button:hover{
+    color:rgb(204, 0, 0) ;
+    cursor: pointer;
+}
+.cuisine_content{
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.cuisine_content a {
+    color:#1a0404;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.cuisine_content a:hover {
+    background-color: #f1caca;
+  }
+.dropdown_menu:hover .cuisine_content {
+    display: block;
+  }
+  
+.dropdown_menu:hover:hover .cuisine_btn {
+    background-color: #f1caca;
+}
+
+/* styling icons */
+.navigation_icons{
+    display:flex ;
+    align-items: center;
+}
+
+/* styling the icon tags */
+.navigation_icons i{
+    margin-right: 20px;
+    color: #1a0404;
+    font-size: 25px;
+    font-weight: 200;
+    transition: all .42s ease;
+}
+/* when we hover pointer over icons */
+.navigation_icons i:hover{
+    transform: scale(1.1);
+    color:rgb(204, 0, 0) ;
+}
+
+/* styling menu icon */
+#menu_icon{
+    font-size: 40px;
+    color:#1a0404;
+    z-index: 10001;  /*highest stack order*/
+    cursor: pointer;  
+}
+
+/* styling the container */
+.container{
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    padding: 120px 0px;
+    height: 100%;
+}
+.container h1{
+    background-color: rgba(245, 245, 220, 0.912);
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 900;
+    height: 100%;
+}
+.container1{
+    background-color: rgba(245, 245, 220, 0.912);
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+    
+}
+.container1 img{
+   
+    position: relative;
+    height: 400px;
+    width:350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-left: #1a0404 solid 4px;
+    border-bottom: #1a0404 solid 4px;
+    box-shadow:-15px 15px 8px 3px #1a0404;
+}
+.container1 .text h4{
+   margin-bottom: 10px;
+   font-size: 40px;
+   font-weight: 700;
+   font-style: oblique;
+   color:#1a0404;
+}
+.container1 .text p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container1 .text .options a{
+    display: inline-block;
+    flex-direction: row;
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 700;
+    
+    background-color: beige;
+    border:#1a0404 solid 1px;
+    margin-right: 450px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container1 .text .options i{
+    margin-top: 2px;
+    margin-left: 8px;
+    float: right;
+    text-align: center;
+    font-size: 38px;
+}
+.container1 .text .options a:hover{
+    background-color: #1a0404;
+    color: beige;
+    transition: all .42s ease;
+    border-radius: 10px;
+}

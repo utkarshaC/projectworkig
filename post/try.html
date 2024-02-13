@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>posting..</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="try.css">
+</head>
+
+<body>
+  <div class="box">
+
+    <div class="container">
+      <h4><img src="logo.png">Spread your creativity!!!</h4>
+      <div class="form-group">
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" placeholder="Enter the name of the recipe">
+      </div>
+
+      <div class="form-group">
+        <label for="recipe-about">About the Recipe:</label>
+        <textarea id="recipe-about" rows="4" placeholder="Enter a brief description about the recipe"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="ingredients">Ingredients:</label>
+        <div id="ingredients-container">
+          <div class="ingredient-item">
+            <input type="text" class="ingredient" placeholder="Enter an ingredient">
+            <span class="delete-ingredient" onclick="deleteIngredient(this)"><i class="fa fa-trash"
+                aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <button id="add-ingredient" onclick="addIngredient()">Add Ingredient</button>
+      </div>
+
+      <div class="form-group">
+        <label for="steps">Steps to follow:</label>
+        <div id="steps-container">
+          <div class="step-item">
+            <input type="text" class="step" placeholder="Enter a step">
+            <span class="delete-step" onclick="deleteStep(this)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <button id="add-step" onclick="addStep()">Add Steps</button>
+      </div>
+
+      <!-- img input -->
+      <div class="form-group">
+        <label for="recipe-img">Recipe Image:</label>
+        <input type="file" id="recipe-img" accept="image/*">
+      </div>
+
+      <!-- Video input url -->
+      <div class="form-group">
+        <label for="recipe-video">Recipe Video:</label>
+        <input type="text" id="recipe-video" placeholder="Enter the URL of the video">
+      </div>
+      
+
+
+
+      <div class="form-group">
+        <button id="post-button" onclick="redirectToPost()">Post</button>
+      </div>
+
+    </div>
+
+    <script>
+      // Add ingredient dynamically
+      function addIngredient() {
+        const ingredientsContainer = document.getElementById('ingredients-container');
+        const ingredientItem = document.createElement('div');
+        ingredientItem.classList.add('ingredient-item');
+        ingredientItem.innerHTML = `
+        <input type="text" class="ingredient" placeholder="Enter an ingredient">
+        <span class="delete-ingredient" onclick="deleteIngredient(this)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+      `;
+        ingredientsContainer.appendChild(ingredientItem);
+      }
+
+
+
+      // Delete ingredient
+      function deleteIngredient(deleteBtn) {
+        const ingredientItem = deleteBtn.parentNode;
+        const ingredientsContainer = document.getElementById('ingredients-container');
+        ingredientsContainer.removeChild(ingredientItem);
+      }
+
+
+      // Add Steps dynamically
+
+      // function addStep() {
+      //   const stepsContainer = document.getElementById('steps-container');
+      //   const stepItem = document.createElement('div');
+      //   stepItem.classList.add('step-item');
+      //   stepItem.innerHTML = `
+      //   <input type="text" class="step" placeholder="Enter a step">
+      //   <span class="delete-step" onclick="deleteStep(this)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+      // `;
+      //   stepsContainer.appendChild(stepItem);
+      // }
+
+
+
+      // // Delete Steps
+      // function deleteStep(deleteBtn) {
+      //   const stepItem = deleteBtn.parentElement;
+      //   const stepsContainer = document.getElementById('steps-container');
+      //   stepsContainer.removeChild(stepItem);
+      // }
+
+      // Add Steps dynamically
+      function addStep() {
+        const stepsContainer = document.getElementById('steps-container');
+        const stepItem = document.createElement('div');
+        stepItem.classList.add('step-item');
+        stepItem.innerHTML = `
+        <input type="text" class="step" placeholder="Enter a step">
+        <span class="delete-step" onclick="deleteStep(this)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+      `;
+        stepsContainer.appendChild(stepItem);
+      }
+
+      // Delete Steps
+      function deleteStep(deleteBtn) {
+        const stepItem = deleteBtn.parentElement;
+        const stepsContainer = document.getElementById('steps-container');
+        stepsContainer.removeChild(stepItem);
+      }
+
+      // Post recipe
+      function redirectToPost() {
+        // Perform necessary actions (e.g., send data to server, etc.)
+        window.location.href = 'post.html'; // Redirect to post page
+      }
+    </script>
+</body>
+
+</html>

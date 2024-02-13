@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Exo 2', sans-serif;
+    list-style: none;
+    text-decoration: none;
+   
+}
+body{
+    background-color: rgba(245, 245, 220, 0.787);
+}
+header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    right:0;
+    z-index: 1000;      /*specifies the stack order of an element */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 10% ;
+    background-color:beige;
+}
+
+.navigation_menu{
+    display: flex;
+   align-items: center;
+}
+
+/*styling navigation menu's anchor tags */
+.navigation_menu a{
+    color: #1a0404;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    transition: all .42s ease;      /* controls animation speed  */
+}
+/* when we hover pointer over menu */
+.navigation_menu a:hover{
+    color:#cc0000 ;
+}
+/* styling the cuisine button */
+.navigation_menu button{
+    color: #1a0404;
+    font-size: 16px;
+    background-color: beige;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 800;
+    border: none;
+    transition: all .42s ease;
+    
+
+}
+.navigation_menu button:hover{
+    color:rgb(204, 0, 0) ;
+    cursor: pointer;
+}
+.cuisine_content{
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.cuisine_content a {
+    color:#1a0404;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.cuisine_content a:hover {
+    background-color: #f1caca;
+  }
+.dropdown_menu:hover .cuisine_content {
+    display: block;
+  }
+  
+.dropdown_menu:hover:hover .cuisine_btn {
+    background-color: #f1caca;
+}
+
+/* styling icons */
+.navigation_icons{
+    display:flex ;
+    align-items: center;
+}
+
+/* styling the icon tags */
+.navigation_icons i{
+    margin-right: 20px;
+    color: #1a0404;
+    font-size: 25px;
+    font-weight: 200;
+    transition: all .42s ease;
+}
+/* when we hover pointer over icons */
+.navigation_icons i:hover{
+    transform: scale(1.1);
+    color:rgb(204, 0, 0) ;
+}
+
+/* styling menu icon */
+#menu_icon{
+    font-size: 40px;
+    color:#1a0404;
+    z-index: 10001;  /*highest stack order*/
+    cursor: pointer;  
+}
+
+/* styling the section */
+section.main_home{
+    padding: 15% 10%;
+}
+/* styling the segement of main home */
+.main_home{
+    width:100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-position:center;
+    background-color: beige;
+    background-size: cover;
+    animation: animate 16s ease-in-out infinite;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) ;     /*specifies the number (and the widths) of columns in a grid layout*/
+    align-items:center ;
+}
+
+/* styling the main text */
+.maintext h1{
+    color:rgb(243, 17, 17);
+    font-size:40px;
+    text-transform: capitalize;
+    font-weight: 1000;
+    line-height: 1;
+    margin-left: 30px;
+
+}
+.maintext h4{
+    color: #1a0404;
+    font-size: 25px;
+    font-weight:700;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.maintext p{
+    color: #000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight:600 ;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main_btn{
+    display: inline-block;      /*allows to set a width and height*/
+    color: #250a7c;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    text-transform: capitalize;
+    border:#1a0404 2px dashed;
+    padding: 10px 20px;
+    transition: all .42s ease;
+}
+/* styling the mainbtn- hovering */
+.main_btn:hover{
+    background-color: #1a0404;
+    color: beige; 
+    border-color: beige;  
+    transition: all .42s ease;
+}
+/* central positioning the icon */
+.main_btn i{
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+/* styling down btn with icon */
+.down_arrow{
+    position: absolute;
+    top: 85%;
+    right:10%;
+    background-color: beige;
+    border-radius: 50px;
+}
+.down i{
+    color: #1a0404;
+    font-size: 36px;
+    border: solid 2px #1a0404;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+/* hovering on down arrow */
+.down i:hover{
+    background-color: #1a0404;
+    color: beige; 
+    border-color: beige;
+    transition: all .42s ease;
+}
+
+/* next segment------------------------------Recommended */
+
+section.recomm_section{
+    padding:  40px 10%;
+}
+.maintext2{
+    margin-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: #cc0000 4px solid;
+    border-top: #cc0000 4px solid;
+}
+.maintext2 h2{
+    color: #1a0404;
+    font-size: 40px;
+    margin-top: 30px;
+    font-weight: 800;
+   
+}
+.catalouge{
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 30px 30px 30px 100px;
+    display: flex;
+    flex-direction:column;
+    text-transform: capitalize;
+}
+.catalouge .row1{
+    justify-content:center;
+    margin-left: 0px;
+    align-content: center;
+    margin-right:100px ;
+    margin-left:200px ;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.catalouge .row1 .recipe1:hover,
+.catalouge .row1 .recipe2:hover,
+.catalouge .row1 .recipe3:hover{
+    transition: all .42s ease;
+    transform: translateY(-10px);
+    transform: scale(1.02);
+}
+.catalouge .row1 img{
+    margin-right: 100px;
+    box-shadow: #1a0404 -10px 10px 5px;
+    border-left: #1a0404 solid 4px;
+    border-bottom: #1a0404 solid 4px;
+    height: 200px;
+    width:auto;
+}
+.catalouge .row1 h5{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    color:#1a0404;
+}
+
+/* featured section starts here */
+section.feat{
+    padding:40px 10px;
+}
+section.feat .Feat_heading{
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    border-bottom: #cc0000 4px solid;
+    border-top: #cc0000 4px solid;
+}
+section.feat .Feat_heading h1{
+    font-size: 70px;
+    font-weight: 900;
+    color:#1a0404;
+}
+section.feat .Feat_heading span{
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 0;
+    margin-top: 0;
+    color:#1a0404;
+}
+section.feat table.feat_container{
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0 150px;
+}
+section.feat table.feat_container td{
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: #1a0404 solid 4px;
+    
+}
+section.feat table.feat_container .feat_img1{
+    border-left: #1a0404 solid 4px;
+    padding:10px;
+    margin-top: -60px ;
+    box-shadow: #1a0404 -10px 10px 5px;
+}
+section.feat table.feat_container .feat_img2{
+    border-right: #1a0404 solid 4px;
+    padding:10px;
+    box-shadow: #1a0404 10px 10px 5px;
+}
+section.feat table.feat_container img{
+    height: 500px;
+    width:580px;
+}
+section.feat table.feat_container img:hover{
+    transition: all .42s ease;
+    transform: translateY(-10px);
+    transform: scale(1.04);
+}
+td {
+    text-align: center;
+    padding: 0px;
+}
+.feat_item h2{
+    border-bottom: #cc0000 2px solid;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: -140px;
+}
+.feat_item p{
+    font-size: 20px;
+    align-items: center;
+    font-weight: 500;
+    color: #1a0404;   
+}
+.feat_item .goto i{
+    text-align: center;
+    font-size: 30px;
+    float:right;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.feat_item .goto a{
+    font-size: 25px;
+    display: inline-block;
+    flex-direction: row;
+    font-weight: 700;
+    padding:10px;
+    background-color: beige;
+    border:#1a0404 solid 2px;
+    margin-left: -375px;
+    margin-top:20px ;
+    text-align: centre;
+    color: #250a7c;
+}
+.feat_item .goto a:hover
+{
+    background-color: #1a0404;
+    color: beige;
+    transition: all .42s ease;
+    border-radius: 6px;
+}

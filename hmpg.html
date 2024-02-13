@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DietDelish-Homepage</title>
+
+    <!-- csslink -->
+    <link rel="stylesheet" href="hmpg.css">
+
+    <!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap" rel="stylesheet">
+    
+    <!-- linking icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- using # to link the logo as the top of the page -->
+        <a href="#" class="logo"><img src="logo.png" style="max-width: 160px;
+            height: auto;" alt="DietDelish"></a>
+
+        <!-- list in navigation bar, all on top -->
+        <ul class="navigation_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#recommended">recommended</a></li>
+            <div class="dropdown_menu">
+                <li><button class="cuisine_btn">Cuisine</button></li>
+                <div class="cuisine_content">
+                    <a href="#">Veg</a>
+                    <a href="#">Chinese</a>
+                    <a href="#">Mexican</a>
+                    <a href="#">Indian</a>
+                    <a href="#">Italian</a>
+                    <a href="#">Chinese</a>
+                    <a href="#">Continental</a>
+                </div>
+                <!-- <li><a href="#">Cuisine</a></li> -->
+            </div>
+            <li><a href="/aboutus/aboutUs.html">About us</a></li>
+            <li><a href="/contactus/contactus.html">contact us</a></li>
+        </ul>
+        <div class="navigation_icons">
+            <a href="#"><i class='bx bx-search-alt'></i></a>
+            <a href="#"><i class='bx bxs-bookmark-heart'></i></a>
+            <a href="/post/try.html"><i class='bx bx-message-square-edit'></i></box-icon></a>
+
+            <a href="/login/log1.html"><i class='bx bx-log-in'></i></a>
+
+            <!-- separating the menu icon -->
+            <div class='bx bx-menu' id="menu_icon"></div>
+        </div>
+    </header>
+
+    <!-- new section---HOME -->
+    <section class="main_home">
+        <div class="maintext" style="background-color: rgba(245, 245, 220, 0.829); width: fit-content;
+            border-radius: 10%;">
+            <h4>Unleash your culinary creativity<br>with our community.</h4>
+
+            <h1>Cook,<br> Share,<br> Inspire:</h1>
+            
+            <p>Discover, contribute, and transform the way you eat.</p>
+            <!--leads to featured posts-->
+            <a href="#Featured" class="main_btn">Explore now  <i class='bx bxs-chevron-right'></i></a>
+        </div>
+
+        <!-- arrow towards recommended???? -->
+        <div class="down_arrow">
+            <a href="#recommended" class="down"><i class='bx bx-down-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section class="recomm_section" id="recommended">
+        <div class="blank"></div>
+        <div class="maintext2">
+            <h2>A Collection of Nutritious Delights,<br></h2>
+            <span style="font-weight: 900; font-size: 80px;">Made just for 
+              <span style="color:#cc0000; font-style: oblique;">You!</span>
+            </span>
+        </div>
+        <div class="catalouge">
+            <div class="row1">
+                <div class="recipe1">
+                    <a href="/Saladeg/Salad.html">
+                        <img src="salad1.jpeg" alt="salad">
+                        <h5>Super Salad Platter</h5>
+                    </a>
+                    <p class="details">
+                        <div class="time">
+                            <i class='bx bx-time'></i>5 mins
+                        </div>
+                        <div class="diffi">
+                            <i class='bx bx-dish'></i>Easy
+                        </div>
+                    </p>
+                </div>
+                <div class="recipe2">
+                    <a href="/PancakeEg/Pancake.html">
+                        <img src="pancake.jpg" alt="pancake">
+                        <h5>Gluten-free Pancakes</h5>
+                    </a>
+                    <p class="details">
+                       <div class="time">
+                            <i class='bx bx-time'></i>
+                            25 mins
+                        </div>
+                        <div class="diffi">
+                            <i class='bx bx-dish'></i>Easy
+                        </div>
+                    </p>
+                </div>
+                <div class="recipe3">
+                    <a href="/PaneerKheer/kheerPanner.html"><img src="paneerKheer.jpg" alt="Kheer">
+                        <h5>Paneer Kheer</h5>
+                    </a>
+                    <p class="details">
+                        <div class="time">
+                             <i class='bx bx-time'></i>
+                             30 mins
+                         </div>
+                         <div class="diffi">
+                             <i class='bx bx-dish'></i>Intermediate
+                         </div>
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured section -->
+
+    <section class= "feat" id="Featured">
+        <!-- HEADING -->
+        <div class="Feat_heading"> 
+            <h1>Unveiling the Crème de la Crème of Recipes!</h1><br>
+            <span>Explore our Featured Flavors And Unleash Your Inner Chef </span>
+        </div>
+
+        <!-- Contents -->
+
+        <div class="feat_container">
+
+            <table class="feat_container">
+                <tr>
+                    <!-- first item -->
+                    <td>
+                        <div class="feat_img1" class="img">
+                            <a href=""><img src="chocolatecake.webp" alt="chocolate cake"></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="feat_item" class="feat_details">
+                            <h2>Delicious Molten Chocolate Cake</h2>
+                            <p>
+                                In a cozy kitchen, where aromas mingle and anticipation fills the air, 
+                                lies the secret to pure indulgence. Picture a velvety symphony of 
+                                flavors, where decadent darkness meets a sinful sweetness. 
+                                It's a tale of seduction, whispered in the form of a chocolate cake 
+                                recipe.<br><br> Brace yourself for a journey through luscious layers, 
+                                where each bite is an invitation to surrender to temptation. 
+                                As we unveil the steps to this gastronomic masterpiece, prepare to 
+                                be enchanted by the artistry of cocoa, dancing harmoniously with buttery 
+                                goodness.<br><br> Are you ready to surrender to the irresistible allure of 
+                                chocolate? Then let us dive into a realm of pure bliss, 
+                                where a heavenly chocolate cake awaits your eager tastebuds.
+                                <br><br>
+                            </p>
+                             <div class="goto">
+                                <a href="">Go to Recipe<i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                            
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <!-- second item -->
+                    <td>
+                        <div class="feat_item" class="feat_details">
+                            <h2>Delicious Kaju Katli</h2>
+                            <p>
+                                Step into a world of decadence and treat yourself to the exquisite delight 
+                                of Kaju Katli, a beloved Indian sweet that has captured hearts for generations.
+                                Our recipe will guide you through the art of creating this luscious cashew 
+                                fudge, ensuring you achieve the perfect balance of flavors and the signature 
+                                melt-in-your-mouth texture.<br><br>
+                                Our recipe unravels the secrets behind this traditional delicacy, ensuring 
+                                that you can recreate the magic in your very own kitchen. From choosing the 
+                                finest cashews to achieving the perfect consistency of the fudge, we'll guide 
+                                you every step of the way, making the process both accessible and enjoyable.
+                                <br><br>
+                                Unlock the art of creating Kaju Katli and embark on a journey of sweet indulgence.
+                                Let the flavors of this timeless delight tantalize your taste buds and leave you 
+                                yearning for more. Get ready to experience the magic of Kaju Katli and create memories 
+                                that will be cherished for years to come.
+                                <div class="goto">
+                                    <a href="">Go to Recipe<i class='bx bx-right-arrow-alt'></i></a>
+                                </div>
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="feat_img2" class="img">
+                            <a href=""><img src="kajukatli.webp" alt=""></a>
+                        </div>
+                    </td>              
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
